@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nums = [10, 20, 30];
+      nums[nums.length - 1] = 99;
+      console.log(nums);
+
+      // const array = [];
+      // array = [1, 20, 22, 24, 5];
+
+      // function getLastValue(array) {
+      //   const lastIndex = array.length - 1;
+      //   return array[lastIndex];
+      // }
+
+      // console.log(getLastValue(array));
+      // console.log(getLastValue(["hi", "hello", "hey"]));
+
+      function arraySwap(array) {
+        const lastIndex = array.length - 1;
+        const lastValue = array[lastIndex];
+        const firstValue = array[0];
+
+        array[0] = lastValue;
+        array[lastValue] = firstValue;
+
+        return array;
+      }
+
+      console.log(arraySwap([1, 20, 22, 24, 5]));
+
+      // for (i = 0; i <= 10; i += 2) {
+      //   console.log(i);
+      // }
+
+      // for (i = 5; i >= 0; i--) {
+      //   console.log(i);
+      // }
+
+      // let i = 0;
+      // while (i <= 10) {
+      //   console.log(i);
+      //   i++;
+      // }
+
+      let i = 5;
+
+      while (i >= 0) {
+        console.log(i);
+        i--;
+      }
+    </script>
+  </body>
+</html>
